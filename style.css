@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+:root {
+	--ink: #0a0f1e;
+	--panel: #0f172a;
+	--accent: #f59e0b;
+	--accent-2: #22d3ee;
+	--muted: #9fb3c8;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+	background:
+		radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.2), transparent 35%),
+		radial-gradient(circle at 80% 30%, rgba(245, 158, 11, 0.25), transparent 40%),
+		linear-gradient(135deg, #0b1020 0%, #0b343e 50%, #06121a 100%);
+	color: #e5e7eb;
+	display: grid;
+	place-items: center;
+	padding: 32px 16px;
+}
+
+.login {
+	width: min(420px, 100%);
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 24px;
+	padding: 36px 32px 32px;
+	box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+	position: relative;
+	overflow: hidden;
+	backdrop-filter: blur(14px);
+}
+
+.login::before {
+	content: "";
+	position: absolute;
+	inset: -60% 40% auto;
+	width: 160%;
+	aspect-ratio: 1;
+	background: radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.3), transparent 55%);
+	filter: blur(60px);
+	opacity: 0.7;
+}
+
+.login::after {
+	content: "";
+	position: absolute;
+	inset: auto -40% -70% 10%;
+	width: 160%;
+	aspect-ratio: 1;
+	background: radial-gradient(circle at 30% 70%, rgba(245, 158, 11, 0.28), transparent 55%);
+	filter: blur(70px);
+	opacity: 0.8;
+}
+
+.login form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	z-index: 1;
+}
+
+.login form::before {
+	content: "Login";
+	font-size: 24px;
+	font-weight: 600;
+	display: block;
+	color: #f8fafc;
+	letter-spacing: 0.4px;
+	margin-bottom: 4px;
+}
+
+.login form::after {
+	content: "Access your dashboard";
+	font-size: 14px;
+	color: rgba(229, 231, 235, 0.75);
+	margin-top: -6px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+input,
+button {
+	font-family: inherit;
+	border: none;
+	outline: none;
+}
+
+input {
+	width: 100%;
+	padding: 14px 16px;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	color: #f1f5f9;
+	font-size: 15px;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+input::placeholder {
+	color: rgba(241, 245, 249, 0.6);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+input:focus {
+	border-color: rgba(34, 211, 238, 0.7);
+	box-shadow: 0 0 0 8px rgba(34, 211, 238, 0.12);
+	transform: translateY(-1px);
+}
+
+button {
+	margin-top: 8px;
+	padding: 14px 16px;
+	border-radius: 14px;
+	background: linear-gradient(120deg, #f59e0b 0%, #f97316 50%, #f59e0b 100%);
+	color: #0b0f1a;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+	box-shadow: 0 12px 30px rgba(249, 115, 22, 0.35);
+}
+
+button:hover {
+	transform: translateY(-2px) scale(1.01);
+	box-shadow: 0 16px 40px rgba(249, 115, 22, 0.45);
+	filter: brightness(1.02);
+}
+
+button:active {
+	transform: translateY(0);
+	box-shadow: 0 8px 20px rgba(249, 115, 22, 0.35);
+}
+
+@media (max-width: 520px) {
+	body {
+		padding: 20px 12px;
+	}
+
+	.login {
+		padding: 30px 24px 26px;
+		border-radius: 18px;
+	}
+
+	.login form::before {
+		font-size: 22px;
+	}
+}

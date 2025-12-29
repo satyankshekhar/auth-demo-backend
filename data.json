@@ -1,0 +1,123 @@
+
+[
+	{
+		"id": 1,
+		"name": "Asha Kapoor",
+		"username": "ashakap",
+		"email": "asha.kapoor@example.com",
+		"created_at": "2025-12-26T08:12:34Z",
+		"active": true,
+		"score": 87.42,
+		"tags": ["alpha", "beta"],
+		"address": {"street": "12 Lotus Lane", "city": "Bengaluru", "zip": "560001"},
+		"preferences": {"newsletter": true, "notifications": ["email", "sms"]}
+	},
+	{
+		"id": 2,
+		"name": "Ravi Singh",
+		"username": "ravigs",
+		"email": "ravi.singh@example.com",
+		"created_at": "2025-11-05T14:03:10Z",
+		"active": false,
+		"score": 45.7,
+		"tags": ["gamma"],
+		"address": {"street": "77 Mango St", "city": "Mumbai", "zip": "400001"},
+		"preferences": {"newsletter": false, "notifications": ["email"]}
+	},
+	{
+		"id": 3,
+		"name": "Leena Mehta",
+		"username": "leenam",
+		"email": "leena.mehta@example.net",
+		"created_at": "2024-06-19T21:22:11Z",
+		"active": true,
+		"score": 93.1,
+		"tags": ["delta", "release"],
+		"address": {"street": "4 River Road", "city": "Kolkata", "zip": "700001"},
+		"preferences": {"newsletter": true, "notifications": ["push"]}
+	},
+	{
+		"id": 4,
+		"name": "Omar Farouk",
+		"username": "omar_f",
+		"email": "omar.farouk@example.org",
+		"created_at": "2023-02-10T09:45:00Z",
+		"active": true,
+		"score": 62.33,
+		"tags": ["beta", "qa"],
+		"address": {"street": "9 Palm Ave", "city": "Chennai", "zip": "600001"},
+		"preferences": {"newsletter": false, "notifications": ["sms", "email"]}
+	},
+	{
+		"id": 5,
+		"name": "Maya Patel",
+		"username": "mayap",
+		"email": "maya.patel@example.com",
+		"created_at": "2025-01-15T12:00:00Z",
+		"active": false,
+		"score": 30.5,
+		"tags": [],
+		"address": {"street": "101 Sunrise Blvd", "city": "Pune", "zip": "411001"},
+		"preferences": {"newsletter": true, "notifications": []}
+	},
+	{
+		"id": 6,
+		"name": "Jatin Verma",
+		"username": "jverma",
+		"email": "jatin.verma@example.com",
+		"created_at": "2022-08-30T17:18:20Z",
+		"active": true,
+		"score": 78.0,
+		"tags": ["gamma", "ops"],
+		"address": {"street": "55 Hilltop", "city": "Jaipur", "zip": "302001"},
+		"preferences": {"newsletter": false, "notifications": ["email", "push"]}
+	},
+	{
+		"id": 7,
+		"name": "Priya Reddy",
+		"username": "priyared",
+		"email": "priya.reddy@example.io",
+		"created_at": "2025-07-02T06:05:44Z",
+		"active": true,
+		"score": 55.12,
+		"tags": ["trial"],
+		"address": {"street": "3 Lakeview", "city": "Hyderabad", "zip": "500001"},
+		"preferences": {"newsletter": true, "notifications": ["email"]}
+	},
+	{
+		"id": 8,
+		"name": "Samir Khandekar",
+		"username": "samirk",
+		"email": "samir.k@example.com",
+		"created_at": "2021-12-12T12:12:12Z",
+		"active": false,
+		"score": 12.9,
+		"tags": ["legacy"],
+		"address": {"street": "88 Old Town", "city": "Surat", "zip": "395003"},
+		"preferences": {"newsletter": false, "notifications": []}
+	},
+	{
+		"id": 9,
+		"name": "Nikhil Rao",
+		"username": "nikhilr",
+		"email": "nikhil.rao@example.net",
+		"created_at": "2024-03-03T03:03:03Z",
+		"active": true,
+		"score": 100.0,
+		"tags": ["elite", "gamma"],
+		"address": {"street": "7 Cedar Ct", "city": "Kochi", "zip": "682001"},
+		"preferences": {"newsletter": true, "notifications": ["email", "push"]}
+	},
+	{
+		"id": 10,
+		"name": "Zara Khan",
+		"username": "zarak",
+		"email": "zara.khan@example.com",
+		"created_at": "2025-10-20T20:20:20Z",
+		"active": false,
+		"score": 48.6,
+		"tags": ["beta"],
+		"address": {"street": "210 Garden St", "city": "Ahmedabad", "zip": "380001"},
+		"preferences": {"newsletter": false, "notifications": ["sms"]}
+	}
+]
